@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System;
+using BenchmarkDotNet.Attributes;
 
 namespace DiscreteKnapsackProblem
 {

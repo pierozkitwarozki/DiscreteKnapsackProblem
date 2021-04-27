@@ -45,6 +45,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "BenchmarkDotNet": {
+              "target": "Package",
+              "version": "[0.12.1, )"
+            },
             "Bogus": {
               "target": "Package",
               "version": "[33.0.2, )"

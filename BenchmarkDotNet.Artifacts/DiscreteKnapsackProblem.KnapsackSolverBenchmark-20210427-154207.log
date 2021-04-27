@@ -1,0 +1,132 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 1 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in D:\Users\Bart\VS_Code_Projects\DiscreteKnapsackProblem\bin\Release\net5.0\c6ae7031-72ed-4b88-9f11-f29167ef20a1
+// command took 1,04s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in D:\Users\Bart\VS_Code_Projects\DiscreteKnapsackProblem\bin\Release\net5.0\c6ae7031-72ed-4b88-9f11-f29167ef20a1
+// command took 1,92s and exited with 0
+// ***** Done, took 00:00:03 (3.02 sec)   *****
+// Found 1 benchmarks:
+//   KnapsackSolverBenchmark.GetSolverBenchmark: DefaultJob
+
+// **************************
+// Benchmark: KnapsackSolverBenchmark.GetSolverBenchmark: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "c6ae7031-72ed-4b88-9f11-f29167ef20a1.dll" --benchmarkName "DiscreteKnapsackProblem.KnapsackSolverBenchmark.GetSolverBenchmark" --job "Default" --benchmarkId 0 in D:\Users\Bart\VS_Code_Projects\DiscreteKnapsackProblem\bin\Release\net5.0\c6ae7031-72ed-4b88-9f11-f29167ef20a1\bin\Release\netcoreapp5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 155000.00 ns, 155.0000 us/op
+WorkloadJitting  1: 1 op, 456717600.00 ns, 456.7176 ms/op
+
+WorkloadWarmup   1: 1 op, 397929300.00 ns, 397.9293 ms/op
+WorkloadWarmup   2: 1 op, 398208700.00 ns, 398.2087 ms/op
+WorkloadWarmup   3: 1 op, 400610300.00 ns, 400.6103 ms/op
+WorkloadWarmup   4: 1 op, 398040000.00 ns, 398.0400 ms/op
+WorkloadWarmup   5: 1 op, 398946200.00 ns, 398.9462 ms/op
+WorkloadWarmup   6: 1 op, 397298200.00 ns, 397.2982 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 399225200.00 ns, 399.2252 ms/op
+WorkloadActual   2: 1 op, 407579900.00 ns, 407.5799 ms/op
+WorkloadActual   3: 1 op, 407049300.00 ns, 407.0493 ms/op
+WorkloadActual   4: 1 op, 408683600.00 ns, 408.6836 ms/op
+WorkloadActual   5: 1 op, 407429800.00 ns, 407.4298 ms/op
+WorkloadActual   6: 1 op, 408402000.00 ns, 408.4020 ms/op
+WorkloadActual   7: 1 op, 407472600.00 ns, 407.4726 ms/op
+WorkloadActual   8: 1 op, 408520400.00 ns, 408.5204 ms/op
+WorkloadActual   9: 1 op, 408606200.00 ns, 408.6062 ms/op
+WorkloadActual  10: 1 op, 402136400.00 ns, 402.1364 ms/op
+WorkloadActual  11: 1 op, 405498200.00 ns, 405.4982 ms/op
+WorkloadActual  12: 1 op, 399745800.00 ns, 399.7458 ms/op
+WorkloadActual  13: 1 op, 391918500.00 ns, 391.9185 ms/op
+WorkloadActual  14: 1 op, 393958000.00 ns, 393.9580 ms/op
+WorkloadActual  15: 1 op, 393788000.00 ns, 393.7880 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 399225200.00 ns, 399.2252 ms/op
+WorkloadResult   2: 1 op, 407579900.00 ns, 407.5799 ms/op
+WorkloadResult   3: 1 op, 407049300.00 ns, 407.0493 ms/op
+WorkloadResult   4: 1 op, 408683600.00 ns, 408.6836 ms/op
+WorkloadResult   5: 1 op, 407429800.00 ns, 407.4298 ms/op
+WorkloadResult   6: 1 op, 408402000.00 ns, 408.4020 ms/op
+WorkloadResult   7: 1 op, 407472600.00 ns, 407.4726 ms/op
+WorkloadResult   8: 1 op, 408520400.00 ns, 408.5204 ms/op
+WorkloadResult   9: 1 op, 408606200.00 ns, 408.6062 ms/op
+WorkloadResult  10: 1 op, 402136400.00 ns, 402.1364 ms/op
+WorkloadResult  11: 1 op, 405498200.00 ns, 405.4982 ms/op
+WorkloadResult  12: 1 op, 399745800.00 ns, 399.7458 ms/op
+WorkloadResult  13: 1 op, 391918500.00 ns, 391.9185 ms/op
+WorkloadResult  14: 1 op, 393958000.00 ns, 393.9580 ms/op
+WorkloadResult  15: 1 op, 393788000.00 ns, 393.7880 ms/op
+GC:  0 0 0 288 1
+Threading:  2 0 1
+
+// AfterAll
+// Benchmark Process 70848 has exited with code 0
+
+Mean = 403.334 ms, StdErr = 1.574 ms (0.39%), N = 15, StdDev = 6.094 ms
+Min = 391.918 ms, Q1 = 399.486 ms, Median = 407.049 ms, Q3 = 407.991 ms, Max = 408.684 ms
+IQR = 8.505 ms, LowerFence = 386.727 ms, UpperFence = 420.749 ms
+ConfidenceInterval = [396.819 ms; 409.849 ms] (CI 99.9%), Margin = 6.515 ms (1.62% of Mean)
+Skewness = -0.72, Kurtosis = 1.82, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\DiscreteKnapsackProblem.KnapsackSolverBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\DiscreteKnapsackProblem.KnapsackSolverBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\DiscreteKnapsackProblem.KnapsackSolverBenchmark-report.html
+
+// * Detailed results *
+KnapsackSolverBenchmark.GetSolverBenchmark: DefaultJob
+Runtime = .NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 403.334 ms, StdErr = 1.574 ms (0.39%), N = 15, StdDev = 6.094 ms
+Min = 391.918 ms, Q1 = 399.486 ms, Median = 407.049 ms, Q3 = 407.991 ms, Max = 408.684 ms
+IQR = 8.505 ms, LowerFence = 386.727 ms, UpperFence = 420.749 ms
+ConfidenceInterval = [396.819 ms; 409.849 ms] (CI 99.9%), Margin = 6.515 ms (1.62% of Mean)
+Skewness = -0.72, Kurtosis = 1.82, MValue = 2
+-------------------- Histogram --------------------
+[388.675 ms ; 400.735 ms) | @@@@@
+[400.735 ms ; 411.162 ms) | @@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
+Intel Core i7-9700K CPU 3.60GHz (Coffee Lake), 1 CPU, 8 logical and 8 physical cores
+.NET Core SDK=5.0.104
+  [Host]     : .NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT
+  DefaultJob : .NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT
+
+
+|             Method |     Mean |   Error |  StdDev | Rank | Gen 0 | Gen 1 | Gen 2 | Allocated |
+|------------------- |---------:|--------:|--------:|-----:|------:|------:|------:|----------:|
+| GetSolverBenchmark | 403.3 ms | 6.52 ms | 6.09 ms |    1 |     - |     - |     - |     288 B |
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Rank      : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  Gen 0     : GC Generation 0 collects per 1000 operations
+  Gen 1     : GC Generation 1 collects per 1000 operations
+  Gen 2     : GC Generation 2 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms      : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:10 (10.24 sec), executed benchmarks: 1
+
+Global total time: 00:00:13 (13.26 sec), executed benchmarks: 1
+// * Artifacts cleanup *
