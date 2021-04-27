@@ -1,0 +1,25 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 1 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in D:\Users\Bart\VS_Code_Projects\DiscreteKnapsackProblem\bin\Release\net5.0\f8b8c81e-a4b7-4a3c-9dca-a58a1565b3a0
+// command took 1,06s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in D:\Users\Bart\VS_Code_Projects\DiscreteKnapsackProblem\bin\Release\net5.0\f8b8c81e-a4b7-4a3c-9dca-a58a1565b3a0
+// command took 1,85s and exited with 0
+// ***** Done, took 00:00:02 (2.97 sec)   *****
+// Found 1 benchmarks:
+//   RecursiveKnapsackSolverBenchmark.GetSolverFromCFGBenchmark: DefaultJob
+
+// **************************
+// Benchmark: RecursiveKnapsackSolverBenchmark.GetSolverFromCFGBenchmark: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f8b8c81e-a4b7-4a3c-9dca-a58a1565b3a0.dll" --benchmarkName "DiscreteKnapsackProblem.RecursiveKnapsackSolverBenchmark.GetSolverFromCFGBenchmark" --job "Default" --benchmarkId 0 in D:\Users\Bart\VS_Code_Projects\DiscreteKnapsackProblem\bin\Release\net5.0\f8b8c81e-a4b7-4a3c-9dca-a58a1565b3a0\bin\Release\netcoreapp5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 148200.00 ns, 148.2000 us/op

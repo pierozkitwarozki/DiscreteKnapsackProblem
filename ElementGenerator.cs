@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Bogus;
 
@@ -8,6 +9,7 @@ namespace DiscreteKnapsackProblem
         private readonly int count;
         private readonly int maxWeight;
         private readonly int maxValue;
+        private List<Element> elements;
 
         public ElementGenerator(int count, int maxWeight, int maxValue)
         {
@@ -18,7 +20,7 @@ namespace DiscreteKnapsackProblem
 
         public IList<Element> Generate()
         {
-            var elements = new List<Element>();
+            elements = new List<Element>();
 
             for(var i=0; i<count; i++)
             {
@@ -33,5 +35,14 @@ namespace DiscreteKnapsackProblem
             
             return elements;
         } 
+
+        public void PrintGeneratedItems()
+        {
+            for (int i = 0; i < elements.Count; i++)
+            {
+                Console.WriteLine
+                    ($"{i+1}. Value: {elements[i].Value}, Weight: {elements[i].Weight}");
+            }
+        }
     }
 }

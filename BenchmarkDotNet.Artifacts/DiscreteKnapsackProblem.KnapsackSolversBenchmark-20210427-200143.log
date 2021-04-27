@@ -1,0 +1,271 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in D:\Users\Bart\VS_Code_Projects\DiscreteKnapsackProblem\bin\Release\net5.0\85c552b9-6c26-4f95-87b3-569561faa513
+// command took 1,13s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in D:\Users\Bart\VS_Code_Projects\DiscreteKnapsackProblem\bin\Release\net5.0\85c552b9-6c26-4f95-87b3-569561faa513
+// command took 1,96s and exited with 0
+// ***** Done, took 00:00:03 (3.15 sec)   *****
+// Found 2 benchmarks:
+//   KnapsackSolversBenchmark.GetRecursiveSolverBenchmark: DefaultJob
+//   KnapsackSolversBenchmark.GetApproximateSolverBenchmark: DefaultJob
+
+// **************************
+// Benchmark: KnapsackSolversBenchmark.GetRecursiveSolverBenchmark: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "85c552b9-6c26-4f95-87b3-569561faa513.dll" --benchmarkName "DiscreteKnapsackProblem.KnapsackSolversBenchmark.GetRecursiveSolverBenchmark" --job "Default" --benchmarkId 0 in D:\Users\Bart\VS_Code_Projects\DiscreteKnapsackProblem\bin\Release\net5.0\85c552b9-6c26-4f95-87b3-569561faa513\bin\Release\netcoreapp5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 162400.00 ns, 162.4000 us/op
+WorkloadJitting  1: 1 op, 288977900.00 ns, 288.9779 ms/op
+
+WorkloadPilot    1: 2 op, 466065000.00 ns, 233.0325 ms/op
+WorkloadPilot    2: 3 op, 694209400.00 ns, 231.4031 ms/op
+
+WorkloadWarmup   1: 3 op, 697830000.00 ns, 232.6100 ms/op
+WorkloadWarmup   2: 3 op, 697211400.00 ns, 232.4038 ms/op
+WorkloadWarmup   3: 3 op, 697431100.00 ns, 232.4770 ms/op
+WorkloadWarmup   4: 3 op, 700318200.00 ns, 233.4394 ms/op
+WorkloadWarmup   5: 3 op, 701407100.00 ns, 233.8024 ms/op
+WorkloadWarmup   6: 3 op, 701719400.00 ns, 233.9065 ms/op
+WorkloadWarmup   7: 3 op, 697319800.00 ns, 232.4399 ms/op
+WorkloadWarmup   8: 3 op, 701261400.00 ns, 233.7538 ms/op
+WorkloadWarmup   9: 3 op, 693794500.00 ns, 231.2648 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 3 op, 679819800.00 ns, 226.6066 ms/op
+WorkloadActual   2: 3 op, 679064900.00 ns, 226.3550 ms/op
+WorkloadActual   3: 3 op, 677453700.00 ns, 225.8179 ms/op
+WorkloadActual   4: 3 op, 675126000.00 ns, 225.0420 ms/op
+WorkloadActual   5: 3 op, 675765700.00 ns, 225.2552 ms/op
+WorkloadActual   6: 3 op, 677719000.00 ns, 225.9063 ms/op
+WorkloadActual   7: 3 op, 676030100.00 ns, 225.3434 ms/op
+WorkloadActual   8: 3 op, 701259700.00 ns, 233.7532 ms/op
+WorkloadActual   9: 3 op, 676422800.00 ns, 225.4743 ms/op
+WorkloadActual  10: 3 op, 681497900.00 ns, 227.1660 ms/op
+WorkloadActual  11: 3 op, 675469600.00 ns, 225.1565 ms/op
+WorkloadActual  12: 3 op, 679143700.00 ns, 226.3812 ms/op
+WorkloadActual  13: 3 op, 684805400.00 ns, 228.2685 ms/op
+WorkloadActual  14: 3 op, 678763600.00 ns, 226.2545 ms/op
+WorkloadActual  15: 3 op, 673169100.00 ns, 224.3897 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 3 op, 679819800.00 ns, 226.6066 ms/op
+WorkloadResult   2: 3 op, 679064900.00 ns, 226.3550 ms/op
+WorkloadResult   3: 3 op, 677453700.00 ns, 225.8179 ms/op
+WorkloadResult   4: 3 op, 675126000.00 ns, 225.0420 ms/op
+WorkloadResult   5: 3 op, 675765700.00 ns, 225.2552 ms/op
+WorkloadResult   6: 3 op, 677719000.00 ns, 225.9063 ms/op
+WorkloadResult   7: 3 op, 676030100.00 ns, 225.3434 ms/op
+WorkloadResult   8: 3 op, 676422800.00 ns, 225.4743 ms/op
+WorkloadResult   9: 3 op, 681497900.00 ns, 227.1660 ms/op
+WorkloadResult  10: 3 op, 675469600.00 ns, 225.1565 ms/op
+WorkloadResult  11: 3 op, 679143700.00 ns, 226.3812 ms/op
+WorkloadResult  12: 3 op, 684805400.00 ns, 228.2685 ms/op
+WorkloadResult  13: 3 op, 678763600.00 ns, 226.2545 ms/op
+WorkloadResult  14: 3 op, 673169100.00 ns, 224.3897 ms/op
+GC:  0 0 0 288 3
+Threading:  2 0 3
+
+// AfterAll
+// Benchmark Process 42916 has exited with code 0
+
+Mean = 225.958 ms, StdErr = 0.264 ms (0.12%), N = 14, StdDev = 0.989 ms
+Min = 224.390 ms, Q1 = 225.277 ms, Median = 225.862 ms, Q3 = 226.375 ms, Max = 228.268 ms
+IQR = 1.097 ms, LowerFence = 223.631 ms, UpperFence = 228.021 ms
+ConfidenceInterval = [224.843 ms; 227.074 ms] (CI 99.9%), Margin = 1.115 ms (0.49% of Mean)
+Skewness = 0.64, Kurtosis = 2.87, MValue = 2
+
+// **************************
+// Benchmark: KnapsackSolversBenchmark.GetApproximateSolverBenchmark: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "85c552b9-6c26-4f95-87b3-569561faa513.dll" --benchmarkName "DiscreteKnapsackProblem.KnapsackSolversBenchmark.GetApproximateSolverBenchmark" --job "Default" --benchmarkId 1 in D:\Users\Bart\VS_Code_Projects\DiscreteKnapsackProblem\bin\Release\net5.0\85c552b9-6c26-4f95-87b3-569561faa513\bin\Release\netcoreapp5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 149900.00 ns, 149.9000 us/op
+WorkloadJitting  1: 1 op, 1033700.00 ns, 1.0337 ms/op
+
+OverheadJitting  2: 16 op, 177600.00 ns, 11.1000 us/op
+WorkloadJitting  2: 16 op, 208300.00 ns, 13.0188 us/op
+
+WorkloadPilot    1: 16 op, 26300.00 ns, 1.6438 us/op
+WorkloadPilot    2: 32 op, 47200.00 ns, 1.4750 us/op
+WorkloadPilot    3: 64 op, 79800.00 ns, 1.2469 us/op
+WorkloadPilot    4: 128 op, 155500.00 ns, 1.2148 us/op
+WorkloadPilot    5: 256 op, 282700.00 ns, 1.1043 us/op
+WorkloadPilot    6: 512 op, 561600.00 ns, 1.0969 us/op
+WorkloadPilot    7: 1024 op, 1136900.00 ns, 1.1103 us/op
+WorkloadPilot    8: 2048 op, 2270900.00 ns, 1.1088 us/op
+WorkloadPilot    9: 4096 op, 4393000.00 ns, 1.0725 us/op
+WorkloadPilot   10: 8192 op, 9249800.00 ns, 1.1291 us/op
+WorkloadPilot   11: 16384 op, 18077500.00 ns, 1.1034 us/op
+WorkloadPilot   12: 32768 op, 35637200.00 ns, 1.0876 us/op
+WorkloadPilot   13: 65536 op, 63923200.00 ns, 975.3906 ns/op
+WorkloadPilot   14: 131072 op, 110925400.00 ns, 846.2936 ns/op
+WorkloadPilot   15: 262144 op, 218646700.00 ns, 834.0710 ns/op
+WorkloadPilot   16: 524288 op, 432484400.00 ns, 824.8985 ns/op
+WorkloadPilot   17: 1048576 op, 868252400.00 ns, 828.0300 ns/op
+
+OverheadWarmup   1: 1048576 op, 1678400.00 ns, 1.6006 ns/op
+OverheadWarmup   2: 1048576 op, 1881900.00 ns, 1.7947 ns/op
+OverheadWarmup   3: 1048576 op, 1674200.00 ns, 1.5966 ns/op
+OverheadWarmup   4: 1048576 op, 1460400.00 ns, 1.3927 ns/op
+OverheadWarmup   5: 1048576 op, 1521900.00 ns, 1.4514 ns/op
+OverheadWarmup   6: 1048576 op, 1763500.00 ns, 1.6818 ns/op
+OverheadWarmup   7: 1048576 op, 1654000.00 ns, 1.5774 ns/op
+
+OverheadActual   1: 1048576 op, 1685900.00 ns, 1.6078 ns/op
+OverheadActual   2: 1048576 op, 1731600.00 ns, 1.6514 ns/op
+OverheadActual   3: 1048576 op, 1753900.00 ns, 1.6726 ns/op
+OverheadActual   4: 1048576 op, 1710600.00 ns, 1.6314 ns/op
+OverheadActual   5: 1048576 op, 1484800.00 ns, 1.4160 ns/op
+OverheadActual   6: 1048576 op, 1851200.00 ns, 1.7654 ns/op
+OverheadActual   7: 1048576 op, 1530300.00 ns, 1.4594 ns/op
+OverheadActual   8: 1048576 op, 1543100.00 ns, 1.4716 ns/op
+OverheadActual   9: 1048576 op, 1552100.00 ns, 1.4802 ns/op
+OverheadActual  10: 1048576 op, 1530300.00 ns, 1.4594 ns/op
+OverheadActual  11: 1048576 op, 1531900.00 ns, 1.4609 ns/op
+OverheadActual  12: 1048576 op, 1532500.00 ns, 1.4615 ns/op
+OverheadActual  13: 1048576 op, 1532800.00 ns, 1.4618 ns/op
+OverheadActual  14: 1048576 op, 1529700.00 ns, 1.4588 ns/op
+OverheadActual  15: 1048576 op, 1530100.00 ns, 1.4592 ns/op
+OverheadActual  16: 1048576 op, 1524100.00 ns, 1.4535 ns/op
+OverheadActual  17: 1048576 op, 1531900.00 ns, 1.4609 ns/op
+OverheadActual  18: 1048576 op, 1532100.00 ns, 1.4611 ns/op
+OverheadActual  19: 1048576 op, 1532000.00 ns, 1.4610 ns/op
+
+WorkloadWarmup   1: 1048576 op, 871395200.00 ns, 831.0272 ns/op
+WorkloadWarmup   2: 1048576 op, 861409700.00 ns, 821.5043 ns/op
+WorkloadWarmup   3: 1048576 op, 859019600.00 ns, 819.2249 ns/op
+WorkloadWarmup   4: 1048576 op, 871901300.00 ns, 831.5099 ns/op
+WorkloadWarmup   5: 1048576 op, 858765500.00 ns, 818.9826 ns/op
+WorkloadWarmup   6: 1048576 op, 862163700.00 ns, 822.2234 ns/op
+WorkloadWarmup   7: 1048576 op, 869232500.00 ns, 828.9647 ns/op
+WorkloadWarmup   8: 1048576 op, 867186600.00 ns, 827.0136 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 1048576 op, 866800000.00 ns, 826.6449 ns/op
+WorkloadActual   2: 1048576 op, 871749900.00 ns, 831.3655 ns/op
+WorkloadActual   3: 1048576 op, 864650700.00 ns, 824.5952 ns/op
+WorkloadActual   4: 1048576 op, 884844600.00 ns, 843.8536 ns/op
+WorkloadActual   5: 1048576 op, 868382800.00 ns, 828.1544 ns/op
+WorkloadActual   6: 1048576 op, 866088600.00 ns, 825.9665 ns/op
+WorkloadActual   7: 1048576 op, 856111100.00 ns, 816.4512 ns/op
+WorkloadActual   8: 1048576 op, 863408600.00 ns, 823.4106 ns/op
+WorkloadActual   9: 1048576 op, 856565200.00 ns, 816.8842 ns/op
+WorkloadActual  10: 1048576 op, 878655700.00 ns, 837.9514 ns/op
+WorkloadActual  11: 1048576 op, 862705500.00 ns, 822.7401 ns/op
+WorkloadActual  12: 1048576 op, 864659700.00 ns, 824.6037 ns/op
+WorkloadActual  13: 1048576 op, 861600100.00 ns, 821.6859 ns/op
+WorkloadActual  14: 1048576 op, 871128600.00 ns, 830.7730 ns/op
+WorkloadActual  15: 1048576 op, 866224400.00 ns, 826.0960 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 1048576 op, 865267900.00 ns, 825.1838 ns/op
+WorkloadResult   2: 1048576 op, 870217800.00 ns, 829.9044 ns/op
+WorkloadResult   3: 1048576 op, 863118600.00 ns, 823.1340 ns/op
+WorkloadResult   4: 1048576 op, 866850700.00 ns, 826.6932 ns/op
+WorkloadResult   5: 1048576 op, 864556500.00 ns, 824.5053 ns/op
+WorkloadResult   6: 1048576 op, 854579000.00 ns, 814.9900 ns/op
+WorkloadResult   7: 1048576 op, 861876500.00 ns, 821.9495 ns/op
+WorkloadResult   8: 1048576 op, 855033100.00 ns, 815.4231 ns/op
+WorkloadResult   9: 1048576 op, 877123600.00 ns, 836.4902 ns/op
+WorkloadResult  10: 1048576 op, 861173400.00 ns, 821.2790 ns/op
+WorkloadResult  11: 1048576 op, 863127600.00 ns, 823.1426 ns/op
+WorkloadResult  12: 1048576 op, 860068000.00 ns, 820.2248 ns/op
+WorkloadResult  13: 1048576 op, 869596500.00 ns, 829.3118 ns/op
+WorkloadResult  14: 1048576 op, 864692300.00 ns, 824.6348 ns/op
+GC:  183 0 0 1149239584 1048576
+Threading:  2 0 1048576
+
+// AfterAll
+// Benchmark Process 67752 has exited with code 0
+
+Mean = 824.062 ns, StdErr = 1.502 ns (0.18%), N = 14, StdDev = 5.619 ns
+Min = 814.990 ns, Q1 = 821.447 ns, Median = 823.824 ns, Q3 = 826.316 ns, Max = 836.490 ns
+IQR = 4.869 ns, LowerFence = 814.143 ns, UpperFence = 833.620 ns
+ConfidenceInterval = [817.723 ns; 830.400 ns] (CI 99.9%), Margin = 6.338 ns (0.77% of Mean)
+Skewness = 0.32, Kurtosis = 2.76, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\DiscreteKnapsackProblem.KnapsackSolversBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\DiscreteKnapsackProblem.KnapsackSolversBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\DiscreteKnapsackProblem.KnapsackSolversBenchmark-report.html
+
+// * Detailed results *
+KnapsackSolversBenchmark.GetRecursiveSolverBenchmark: DefaultJob
+Runtime = .NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 225.958 ms, StdErr = 0.264 ms (0.12%), N = 14, StdDev = 0.989 ms
+Min = 224.390 ms, Q1 = 225.277 ms, Median = 225.862 ms, Q3 = 226.375 ms, Max = 228.268 ms
+IQR = 1.097 ms, LowerFence = 223.631 ms, UpperFence = 228.021 ms
+ConfidenceInterval = [224.843 ms; 227.074 ms] (CI 99.9%), Margin = 1.115 ms (0.49% of Mean)
+Skewness = 0.64, Kurtosis = 2.87, MValue = 2
+-------------------- Histogram --------------------
+[223.851 ms ; 228.807 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+KnapsackSolversBenchmark.GetApproximateSolverBenchmark: DefaultJob
+Runtime = .NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 824.062 ns, StdErr = 1.502 ns (0.18%), N = 14, StdDev = 5.619 ns
+Min = 814.990 ns, Q1 = 821.447 ns, Median = 823.824 ns, Q3 = 826.316 ns, Max = 836.490 ns
+IQR = 4.869 ns, LowerFence = 814.143 ns, UpperFence = 833.620 ns
+ConfidenceInterval = [817.723 ns; 830.400 ns] (CI 99.9%), Margin = 6.338 ns (0.77% of Mean)
+Skewness = 0.32, Kurtosis = 2.76, MValue = 2
+-------------------- Histogram --------------------
+[814.477 ns ; 839.550 ns) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
+Intel Core i7-9700K CPU 3.60GHz (Coffee Lake), 1 CPU, 8 logical and 8 physical cores
+.NET Core SDK=5.0.104
+  [Host]     : .NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT
+  DefaultJob : .NET Core 5.0.5 (CoreCLR 5.0.521.16609, CoreFX 5.0.521.16609), X64 RyuJIT
+
+
+|                        Method |             Mean |           Error |        StdDev | Rank |  Gen 0 | Gen 1 | Gen 2 | Allocated |
+|------------------------------ |-----------------:|----------------:|--------------:|-----:|-------:|------:|------:|----------:|
+|   GetRecursiveSolverBenchmark | 225,958,364.3 ns | 1,115,485.26 ns | 988,848.63 ns |    2 |      - |     - |     - |      96 B |
+| GetApproximateSolverBenchmark |         824.1 ns |         6.34 ns |       5.62 ns |    1 | 0.1745 |     - |     - |    1096 B |
+
+// * Hints *
+Outliers
+  KnapsackSolversBenchmark.GetRecursiveSolverBenchmark: Default   -> 1 outlier  was  removed (233.75 ms)
+  KnapsackSolversBenchmark.GetApproximateSolverBenchmark: Default -> 1 outlier  was  removed (843.85 ns)
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Rank      : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  Gen 0     : GC Generation 0 collects per 1000 operations
+  Gen 1     : GC Generation 1 collects per 1000 operations
+  Gen 2     : GC Generation 2 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ns      : 1 Nanosecond (0.000000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:42 (42.78 sec), executed benchmarks: 2
+
+Global total time: 00:00:45 (45.94 sec), executed benchmarks: 2
+// * Artifacts cleanup *
