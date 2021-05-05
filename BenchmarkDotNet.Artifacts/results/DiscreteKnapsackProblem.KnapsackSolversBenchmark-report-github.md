@@ -8,13 +8,13 @@ Intel Core i7-9700K CPU 3.60GHz (Coffee Lake), 1 CPU, 8 logical and 8 physical c
 
 
 ```
-|                          Method | maxWeight | elementsCount | maxElementWeight | maxElementValue |        Mean |     Error |    StdDev | Rank |  Gen 0 |  Gen 1 | Gen 2 | Allocated |
-|-------------------------------- |---------- |-------------- |----------------- |---------------- |------------:|----------:|----------:|-----:|-------:|-------:|------:|----------:|
-|   GetRecursiveConcreteBenchmark |       100 |            10 |               30 |              30 | 61,104.8 ns | 245.61 ns | 217.73 ns |    8 |      - |      - |     - |     176 B |
-|   GetRecursiveConcreteBenchmark |       140 |            25 |               30 |              40 | 20,786.1 ns |  78.10 ns |  69.24 ns |    7 | 0.0305 |      - |     - |     240 B |
-|   GetApproximateRandomBenchmark |         ? |             ? |                ? |               ? |  1,221.4 ns |   7.54 ns |   6.68 ns |    6 | 0.2499 |      - |     - |    1568 B |
-| GetApproximateConcreteBenchmark |       100 |            10 |               30 |              30 |    893.9 ns |   7.42 ns |   6.94 ns |    5 | 0.2193 | 0.0010 |     - |    1376 B |
-| GetApproximateConcreteBenchmark |       120 |            20 |               30 |              30 |    804.1 ns |   3.08 ns |   2.41 ns |    4 | 0.1984 |      - |     - |    1248 B |
-| GetApproximateConcreteBenchmark |       140 |            25 |               30 |              40 |    708.6 ns |   7.05 ns |   6.60 ns |    3 | 0.1755 |      - |     - |    1104 B |
-|   GetRecursiveConcreteBenchmark |       120 |            20 |               30 |              30 |    564.5 ns |   8.69 ns |   8.13 ns |    2 | 0.0172 |      - |     - |     112 B |
-|     GetRecursiveRandomBenchmark |         ? |             ? |                ? |               ? |    285.1 ns |   2.46 ns |   2.18 ns |    1 | 0.0153 |      - |     - |      96 B |
+|                          Method | maxWeight | elementsCount | maxElementWeight | maxElementValue |         Mean |       Error |      StdDev | Rank |  Gen 0 | Gen 1 | Gen 2 | Allocated |
+|-------------------------------- |---------- |-------------- |----------------- |---------------- |-------------:|------------:|------------:|-----:|-------:|------:|------:|----------:|
+|     GetRecursiveRandomBenchmark |         ? |             ? |                ? |               ? | 523,645.6 ns | 8,988.58 ns | 8,407.92 ns |    8 |      - |     - |     - |     192 B |
+|   GetApproximateRandomBenchmark |         ? |             ? |                ? |               ? |     687.4 ns |     3.54 ns |     3.31 ns |    5 | 0.1755 |     - |     - |    1104 B |
+|   GetRecursiveConcreteBenchmark |       100 |            10 |               30 |              30 |   3,760.9 ns |     9.28 ns |     8.23 ns |    7 | 0.0191 |     - |     - |     128 B |
+| GetApproximateConcreteBenchmark |       100 |            10 |               30 |              30 |     406.8 ns |     3.57 ns |     3.33 ns |    3 | 0.1349 |     - |     - |     848 B |
+|   GetRecursiveConcreteBenchmark |       120 |            20 |               30 |              30 |   2,078.3 ns |     2.43 ns |     1.90 ns |    6 | 0.0191 |     - |     - |     128 B |
+| GetApproximateConcreteBenchmark |       120 |            20 |               30 |              30 |     366.5 ns |     1.90 ns |     1.77 ns |    2 | 0.1249 |     - |     - |     784 B |
+|   GetRecursiveConcreteBenchmark |       140 |            25 |               30 |              40 |     551.8 ns |     0.97 ns |     0.81 ns |    4 | 0.0172 |     - |     - |     112 B |
+| GetApproximateConcreteBenchmark |       140 |            25 |               30 |              40 |     334.3 ns |     1.50 ns |     1.41 ns |    1 | 0.1144 |     - |     - |     720 B |

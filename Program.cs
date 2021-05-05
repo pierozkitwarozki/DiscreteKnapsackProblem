@@ -1,4 +1,5 @@
-﻿using BenchmarkDotNet.Running;
+﻿using System;
+using BenchmarkDotNet.Running;
 using DiscreteKnapsackProblem.Infrastructure;
 
 namespace DiscreteKnapsackProblem
@@ -14,18 +15,30 @@ namespace DiscreteKnapsackProblem
             };
 
             director.BuildWithRandomValues();
-            director.Solve();
+            director.SolveAndCountDiffrences();
 
             director.BuildWithConcreteValues(200, 20, 30, 30);
-            director.Solve();
+            director.SolveAndCountDiffrences();
+
+            director.BuildWithRandomValues();
+            director.SolveAndCountDiffrences();
+
+            director.BuildWithRandomValues();
+            director.SolveAndCountDiffrences();
+
+            Console.WriteLine("Do you want to run example Benchmark? (Y/n)");
+            var answer = Console.ReadLine().Trim();
+
+            if(answer == "Y" || answer == "y")
+                BenchmarkRunner.Run<KnapsackSolversBenchmark>();
 
             /*
             Commands to run benchmark properly:
             1. dotnet build -c Release
-            2. cd 'bin/Release/net5.0/'
-            3. dotnet DiscreteKnapsackProblem.dll
+            3. dotnet run
             */
-            //BenchmarkRunner.Run<KnapsackSolversBenchmark>();
+
+            
         }
     }
 }

@@ -15,7 +15,7 @@ namespace DiscreteKnapsackProblem.Infrastructure
         public ElementGenerator() 
         {
             var rand = new Random();
-            count = rand.Next(5, 50);
+            count = rand.Next(5, 25);
             maxElementWeight = rand.Next(5, 50);
             maxElementValue = rand.Next(5, 50);
         }
