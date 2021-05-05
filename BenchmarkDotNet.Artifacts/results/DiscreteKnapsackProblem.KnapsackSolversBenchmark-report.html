@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>DiscreteKnapsackProblem.KnapsackSolversBenchmark-20210427-200344</title>
+<title>DiscreteKnapsackProblem.KnapsackSolversBenchmark-20210504-200834</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -22,10 +22,16 @@ Intel Core i7-9700K CPU 3.60GHz (Coffee Lake), 1 CPU, 8 logical and 8 physical c
 <pre><code></code></pre>
 
 <table>
-<thead><tr><th>                 Method</th><th>      Mean</th><th>    Error</th><th>   StdDev</th><th>Rank</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
+<thead><tr><th>                   Method</th><th>maxWeight</th><th>elementsCount</th><th>maxElementWeight</th><th>maxElementValue</th><th> Mean</th><th>Error</th><th>StdDev</th><th>Rank</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
 </tr>
-</thead><tbody><tr><td>GetRecursiveSolverBenchmark</td><td>330,574,946.7 ns</td><td>4,884,437.62 ns</td><td>4,568,905.98 ns</td><td>2</td><td>-</td><td>-</td><td>-</td><td>1.59 KB</td>
-</tr><tr><td>GetApproximateSolverBenchmark</td><td>834.3 ns</td><td>2.39 ns</td><td>2.12 ns</td><td>1</td><td>0.1631</td><td>-</td><td>-</td><td>1 KB</td>
+</thead><tbody><tr><td>GetRecursiveConcreteBenchmark</td><td>100</td><td>10</td><td>30</td><td>30</td><td>61,104.8 ns</td><td>245.61 ns</td><td>217.73 ns</td><td>8</td><td>-</td><td>-</td><td>-</td><td>176 B</td>
+</tr><tr><td>GetRecursiveConcreteBenchmark</td><td>140</td><td>25</td><td>30</td><td>40</td><td>20,786.1 ns</td><td>78.10 ns</td><td>69.24 ns</td><td>7</td><td>0.0305</td><td>-</td><td>-</td><td>240 B</td>
+</tr><tr><td>GetApproximateRandomBenchmark</td><td>?</td><td>?</td><td>?</td><td>?</td><td>1,221.4 ns</td><td>7.54 ns</td><td>6.68 ns</td><td>6</td><td>0.2499</td><td>-</td><td>-</td><td>1568 B</td>
+</tr><tr><td>GetApproximateConcreteBenchmark</td><td>100</td><td>10</td><td>30</td><td>30</td><td>893.9 ns</td><td>7.42 ns</td><td>6.94 ns</td><td>5</td><td>0.2193</td><td>0.0010</td><td>-</td><td>1376 B</td>
+</tr><tr><td>GetApproximateConcreteBenchmark</td><td>120</td><td>20</td><td>30</td><td>30</td><td>804.1 ns</td><td>3.08 ns</td><td>2.41 ns</td><td>4</td><td>0.1984</td><td>-</td><td>-</td><td>1248 B</td>
+</tr><tr><td>GetApproximateConcreteBenchmark</td><td>140</td><td>25</td><td>30</td><td>40</td><td>708.6 ns</td><td>7.05 ns</td><td>6.60 ns</td><td>3</td><td>0.1755</td><td>-</td><td>-</td><td>1104 B</td>
+</tr><tr><td>GetRecursiveConcreteBenchmark</td><td>120</td><td>20</td><td>30</td><td>30</td><td>564.5 ns</td><td>8.69 ns</td><td>8.13 ns</td><td>2</td><td>0.0172</td><td>-</td><td>-</td><td>112 B</td>
+</tr><tr><td>GetRecursiveRandomBenchmark</td><td>?</td><td>?</td><td>?</td><td>?</td><td>285.1 ns</td><td>2.46 ns</td><td>2.18 ns</td><td>1</td><td>0.0153</td><td>-</td><td>-</td><td>96 B</td>
 </tr></tbody></table>
 </body>
 </html>

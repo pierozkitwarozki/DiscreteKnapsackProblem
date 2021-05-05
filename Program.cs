@@ -1,7 +1,5 @@
-﻿using System;
-using System.Threading.Tasks;
-using BenchmarkDotNet;
-using BenchmarkDotNet.Running;
+﻿using BenchmarkDotNet.Running;
+using DiscreteKnapsackProblem.Infrastructure;
 
 namespace DiscreteKnapsackProblem
 {
@@ -9,23 +7,17 @@ namespace DiscreteKnapsackProblem
     {
         static void Main(string[] args)
         {
-            var generator = new ElementGenerator(count: 10, maxWeight: 40, maxValue: 30);
+            var knapsackBuilder = new KnapsackBuilder();
+            var director = new Director 
+            {
+                Builder = knapsackBuilder
+            };
 
-            var generatedElements = generator.Generate();
-            
-            var recursiveSolver = new RecursiveKnapsackSolver(elements: generatedElements, maxWeight: 200);
-            var approximateSolver = new ApproximationKnapsackSolver(elements: generatedElements, maxWeight: 200);
+            director.BuildWithRandomValues();
+            director.Solve();
 
-            generator.PrintGeneratedItems();
-
-            Console.WriteLine($"Approximate max value is: {approximateSolver.Solve()}");
-
-            Console.WriteLine("--------------------------------");
-
-            Console.WriteLine($"Recursive max value is: {recursiveSolver.Solve()}");
-
-            Console.WriteLine("***** *** Benchmark ***** ***");
-
+            director.BuildWithConcreteValues(200, 20, 30, 30);
+            director.Solve();
 
             /*
             Commands to run benchmark properly:
